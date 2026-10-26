@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#1268d6">
+    <meta name="description" content="Udyam Indian provides independent consultancy support for Udyam and MSME registration.">
+    <title>Udyam Indian | MSME Registration Support</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="topbar">
+        <div class="container topbar-inner">
+            <p class="helpline">Helpline (Mon–Sat) - (09:00 AM to 06:00 PM)</p>
+            <div class="top-links">
+                <a href="mailto:care@udyamindian.com">care@udyamindian.com</a>
+                <a href="tel:+919031675081">+91 90316 75081</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="brand-row">
+                <a class="brand" href="./index.html" aria-label="Udyam Indian home">
+                    <img class="brand-logo" src="udyam-logo.png" alt="">
+                    <span class="brand-copy"><strong>UDYAMINDIAN</strong><span>Udyam and MSME Registration Private Consultancy Service</span></span>
+                </a>
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="service-navigation">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i><i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+            </div>
+            <nav class="nav" id="service-navigation" aria-label="Main navigation">
+                <div class="nav-links">
+                    <a href="#service-new">New Registration</a>
+                    <a href="#service-update">Edit Certificate</a>
+                    <a href="#service-download">Print Certificate</a>
+                    <a href="#service-forgot">Forgot Udyam</a>
+                    <a href="#service-reregistration">Re-Registration</a>
+                    <a href="#service-annexure">Annexure Certificate</a>
+                    <a href="#service-cancel">Cancel Udyam</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="marquee"><p>UDYAM / MSME REGISTRATION &nbsp; • &nbsp; PRIVATE CONSULTANCY SERVICE</p></div>
+        <section class="hero" id="home">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <div class="eyebrow hero-eyebrow">PRIVATE CONSULTANCY PORTAL FOR</div>
+                    <h1><span>UDYAM / MSME REGISTRATION</span></h1>
+                    <p class="hero-intro">Now MSMEs have become one of the robust pillars of the emerging Indian economy. Thus, it deserves the appropriate resources and tools. MSMEs can register, update, or re-register using our simple, step-by-step process for Udyam Registration, which has been designed to streamline the process and maximize access to government benefits specifically created to empower companies like yours.</p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="./instant-udyam.html">Instant Udyam</a>
+                        <a class="button button-primary" href="#service-new">New Udyam</a>
+                    </div>
+                    <div class="hero-meta" aria-label="Registration information">
+                        <span class="hero-meta-item"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i><span>Last updated: <strong><time datetime="2026-09-29">26 October 2026</time></strong></span></span>
+                        <span class="hero-meta-item"><i class="fa-solid fa-landmark" aria-hidden="true"></i><span>Source: <a href="https://udyamregistration.gov.in/" target="_blank" rel="noopener noreferrer">Ministry of MSME, Govt. of India</a></span></span>
+                    </div>
+                </div>
+
+                <aside class="form-card" id="enquiry">
+                    <div class="form-heading">
+                        <h2>Enquiry Form</h2>
+                        <p>Share your details and we’ll help with the next steps.</p>
+                    </div>
+                    <form id="enquiry-form">
+                        <div class="field-row">
+                            <div class="field">
+                                <label for="name">First name <span>*</span></label>
+                                <input id="name" name="name" type="text" maxlength="60" autocomplete="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="field">
+                                <label for="phone">Mobile number <span>*</span></label>
+                                <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="10-digit mobile number" required>
+                            </div>
+                        </div>
+                        <div class="field-row">
+                            <div class="field">
+                                <label for="email">Email <span>*</span></label>
+                                <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+                            </div>
+                            <div class="field">
+                                <label for="service">Select a service <span>*</span></label>
+                                <select id="service" name="service" required>
+                                    <option value="" selected disabled>Select a service</option>
+                                    <option value="instant-udyam">Instant Udyam Service</option>
+                                    <option value="new-registration">New Udyam Registration</option>
+                                    <option value="re-registration">Udyam Re-Registration</option>
+                                    <option value="certificate-update">Update Udyam Certificate</option>
+                                    <option value="forgot-registration">Forgot Udyam Registration</option>
+                                    <option value="certificate-download">Download Udyam Certificate</option>
+                                    <option value="annexure-certificate">Udyam Annexure Certificate</option>
+                                    <option value="cancel-udyam">Cancel Udyam</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="button button-submit" type="submit">Submit Application</button>
+                        <p class="form-disclaimer"><strong>Disclaimer:</strong> This website is managed by private consultants and is <strong>not affiliated with the Government of India.</strong> The amount paid is against advisory charges. Udyam Aadhar / Udyam Registration carries no government fees.</p>
+                        <p class="form-status" id="form-status" aria-live="polite"></p>
+                    </form>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section" id="benefits">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">UDYAM REGISTRATION BENEFITS</span>
+                    <h2>Why Do You Need Udyam Registration?</h2>
+                    <p>Udyam Registration helps your business get recognised and can open up new opportunities in the growing MSME ecosystem. Here are some key reasons why it matters:</p>
+                </div>
+                <div class="benefit-grid">
+                    <article class="benefit-card"><span class="benefit-icon" aria-hidden="true">🤝</span><div><h3>Business Opportunities</h3><p>May help eligible businesses participate in applicable tenders and procurement opportunities.</p></div></article>
+                    <article class="benefit-card"><span class="benefit-icon" aria-hidden="true">✓</span><div><h3>MSME Recognition</h3><p>Helps identify the enterprise within the MSME framework.</p></div></article>
+                    <article class="benefit-card"><span class="benefit-icon" aria-hidden="true">₹</span><div><h3>Access to Applicable Benefits</h3><p>Eligibility for benefits depends on current rules and specific schemes.</p></div></article>
+                    <article class="benefit-card"><span class="benefit-icon" aria-hidden="true">↗</span><div><h3>Business Growth</h3><p>Can support business credibility and access to relevant opportunities.</p></div></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section documents-section" id="documents">
+            <div class="container">
+                <div class="section-heading documents-heading">
+                    <span class="eyebrow">DOCUMENT CHECKLIST</span>
+                    <h2>Documents Required for Udyam Registration</h2>
+                    <p>Keep your business details and relevant documents ready before starting the registration process.</p>
+                </div>
+                <div class="document-grid">
+                    <article class="document-card">
+                        <div class="document-card-heading">
+                            <span class="document-icon" aria-hidden="true">♙</span>
+                            <div><h3>Proprietorship</h3><p>For individually owned businesses</p></div>
+                        </div>
+                        <ul class="document-list">
+                            <li><strong>Owner's Aadhaar</strong><span>For identity authentication.</span></li>
+                            <li><strong>PAN Details</strong><span>PAN details of the proprietor.</span></li>
+                            <li><strong>Bank Account Details</strong><span>Account number and IFSC code, as applicable.</span></li>
+                        </ul>
+                    </article>
+                    <article class="document-card">
+                        <div class="document-card-heading">
+                            <span class="document-icon" aria-hidden="true">♧</span>
+                            <div><h3>Partnership Firm</h3><p>For businesses operated by partners</p></div>
+                        </div>
+                        <ul class="document-list">
+                            <li><strong>Aadhaar and PAN details</strong><span>Details of the relevant partner.</span></li>
+                            <li><strong>Partnership deed</strong><span>Where applicable.</span></li>
+                            <li><strong>Firm's bank account details</strong></li>
+                        </ul>
+                    </article>
+                    <article class="document-card">
+                        <div class="document-card-heading">
+                            <span class="document-icon" aria-hidden="true">▦</span>
+                            <div><h3>Private Limited Company / LLP</h3></div>
+                        </div>
+                        <ul class="document-list">
+                            <li><strong>Company PAN details</strong></li>
+                            <li><strong>GSTIN details</strong><span>If registered under GST.</span></li>
+                            <li><strong>Aadhaar of an authorised signatory</strong></li>
+                            <li><strong>Certificate of Incorporation or LLP agreement</strong></li>
+                        </ul>
+                    </article>
+                    <article class="document-card">
+                        <div class="document-card-heading">
+                            <span class="document-icon" aria-hidden="true">◇</span>
+                            <div><h3>Other Eligible Entities</h3><p>Trusts, societies, co-operatives and similar entities</p></div>
+                        </div>
+                        <ul class="document-list">
+                            <li><strong>Entity registration certificate</strong></li>
+                            <li><strong>Aadhaar of the authorised representative</strong></li>
+                            <li><strong>PAN details of the entity or representative</strong></li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="additional-documents">
+                    <div class="additional-heading">
+                        <span class="document-icon" aria-hidden="true">▤</span>
+                        <h3>Additional Documents Needed</h3>
+                    </div>
+                    <ul class="additional-list">
+                        <li class="additional-row"><strong>Business Name and Type</strong><span>Choose the business name and activity type, such as manufacturing, services or trading.</span></li>
+                        <li class="additional-row"><strong>Registered Address and Contact Information</strong><span>Keep the business address and correct contact details ready.</span></li>
+                        <li class="additional-row"><strong>Business and Investment Details</strong><span>Prepare information about investment in plant, machinery or equipment, turnover and number of employees.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section services-section" id="services">
+            <div class="container">
+                <h2 class="services-title">MSME / Udyam Registration Services</h2>
+                <p class="services-disclaimer" id="service-fees"><i class="fa-solid fa-circle-info" aria-hidden="true"></i><span>Prices shown are private consultancy charges. Udyam registration on the official government portal is free.</span></p>
+                <div class="service-grid">
+                    <article class="service-card" id="service-instant">
+                        <h3>Instant Udyam Service Form</h3>
+                        <p>Get your Udyam certificate instantly with a smooth online process for a new application, renewal or edits.</p>
+                        <strong class="service-price">₹1,999</strong>
+                        <a class="service-cta" href="#enquiry" data-service="instant-udyam">Get Instant</a>
+                    </article>
+                    <article class="service-card" id="service-new">
+                        <h3>New Udyam Registration</h3>
+                        <p>And finally, find your business MSME registration and start taking the facilities provided for its recognition and support.</p>
+                        <strong class="service-price">₹1,349</strong>
+                        <a class="service-cta" href="#enquiry" data-service="new-registration">Get started</a>
+                    </article>
+                    <article class="service-card" id="service-reregistration">
+                        <h3>Udyam Re-Registration</h3>
+                        <p>Easily renew your Udyog Aadhaar registered business on the Udyam registration and enjoy MSME benefits.</p>
+                        <strong class="service-price">₹1,349</strong>
+                        <a class="service-cta" href="#enquiry" data-service="re-registration">Udyam Re-Register</a>
+                    </article>
+                    <article class="service-card" id="service-update">
+                        <h3>Edit Udyam Certificate</h3>
+                        <p>Changed your business? Update your existing registration with new details such as address, type of business or contact.</p>
+                        <strong class="service-price">₹999</strong>
+                        <a class="service-cta" href="#enquiry" data-service="certificate-update">Edit Now</a>
+                    </article>
+                    <article class="service-card" id="service-forgot">
+                        <h3>Forgot Udyam Registration</h3>
+                        <p>Retrieve your Udyam registration number easily if you've lost it.</p>
+                        <strong class="service-price">₹649</strong>
+                        <a class="service-cta" href="#enquiry" data-service="forgot-registration">Retrieve Now</a>
+                    </article>
+                    <article class="service-card" id="service-download">
+                        <h3>Download Udyam Certificate</h3>
+                        <p>Lost your certificate or need it for authorities? Get and download it within minutes from our platform.</p>
+                        <strong class="service-price">₹649</strong>
+                        <a class="service-cta" href="#enquiry" data-service="certificate-download">Download</a>
+                    </article>
+                    <article class="service-card" id="service-annexure">
+                        <h3>Udyam Annexure Certificate</h3>
+                        <p>Download your annexure certificate to complement your Udyam registration.</p>
+                        <strong class="service-price">₹649</strong>
+                        <a class="service-cta" href="#enquiry" data-service="annexure-certificate">Download Annexure</a>
+                    </article>
+                    <article class="service-card" id="service-cancel">
+                        <h3>Cancel Udyam Registration</h3>
+                        <p>For units shifting out of MSME category or other cancellation queries, get guidance from our experts.</p>
+                        <strong class="service-price">₹649</strong>
+                        <a class="service-cta" href="#enquiry" data-service="cancel-udyam">Cancel Registration</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="closing-content-section" id="why-choose-us">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">HERE TO HELP YOUR BUSINESS</span>
+                    <h2>Why Choose Us for Udyam Registration?</h2>
+                    <p>Clear guidance and friendly support to help you understand each step of the registration process.</p>
+                </div>
+                <div class="why-choose-grid">
+                    <article class="why-choose-card">
+                        <span class="why-choose-icon"><i class="fa-solid fa-stopwatch" aria-hidden="true"></i></span>
+                        <div><h3>Fast, Hassle-Free Guidance</h3><p>Get a clear checklist and step-by-step assistance, so you know what information to prepare.</p></div>
+                    </article>
+                    <article class="why-choose-card">
+                        <span class="why-choose-icon"><i class="fa-solid fa-user-tie" aria-hidden="true"></i></span>
+                        <div><h3>Professional Counselling</h3><p>Our team can help explain the process, required details and next steps for your selected service.</p></div>
+                    </article>
+                    <article class="why-choose-card">
+                        <span class="why-choose-icon"><i class="fa-solid fa-indian-rupee-sign" aria-hidden="true"></i></span>
+                        <div><h3>Clear Consultancy Charges</h3><p>Review our service charges before proceeding. Registration on the official government portal is free.</p></div>
+                    </article>
+                    <article class="why-choose-card">
+                        <span class="why-choose-icon"><i class="fa-solid fa-headset" aria-hidden="true"></i></span>
+                        <div><h3>Dedicated Customer Support</h3><p>Reach out to our support team if you have questions while using our consultancy service.</p></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <section class="application-process" id="process">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">SIMPLE STEPS</span>
+                <h2>How Our Assistance Works</h2>
+                <p>Follow these steps to request consultancy support for your Udyam service.</p>
+            </div>
+            <ol class="application-steps">
+                <li class="application-step">
+                    <span class="application-step-icon"><i class="fa-solid fa-clipboard-list" aria-hidden="true"></i></span>
+                    <h3>Fill the Application Form</h3>
+                    <p>Choose your service and enter your contact details in the form above.</p>
+                </li>
+                <li class="application-step">
+                    <span class="application-step-icon"><i class="fa-solid fa-credit-card" aria-hidden="true"></i></span>
+                    <h3>Review Consultancy Charges</h3>
+                    <p>Confirm the service scope and consultancy fee before arranging payment with our team. Government portal registration is free.</p>
+                </li>
+                <li class="application-step">
+                    <span class="application-step-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></span>
+                    <h3>Complete OTP Verification</h3>
+                    <p>Enter any OTP yourself only on the official portal. Our team will never ask you to share it.</p>
+                </li>
+                <li class="application-step">
+                    <span class="application-step-icon"><i class="fa-solid fa-envelope-open-text" aria-hidden="true"></i></span>
+                    <h3>Get Service Updates</h3>
+                    <p>Contact our team by email or phone for guidance on the next steps for your selected service.</p>
+                </li>
+            </ol>
+            <p class="process-safety-note"><strong>Security reminder:</strong> Never share your OTP, passwords or sensitive login credentials with anyone. This enquiry form is a visual prototype and does not submit applications or process payments.</p>
+            <div class="process-cta"><a class="button button-primary" href="#enquiry">Ask us about a service</a></div>
+        </div>
+    </section>
+
+    <section class="footer-source-note" aria-label="Registration information source">
+        <div class="container footer-source-note-inner">
+            <span class="footer-source-note-item"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i><span>Last updated: <strong><time datetime="2026-10-26">26 October 2026</time></strong></span></span>
+            <span class="footer-source-note-item"><i class="fa-solid fa-landmark" aria-hidden="true"></i><span>Source: <a href="https://udyamregistration.gov.in/" target="_blank" rel="noopener noreferrer">Ministry of MSME, Govt. of India</a></span></span>
+        </div>
+    </section>
+
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a class="footer-brand" href="#home"><img class="brand-logo" src="udyam-logo.png" alt=""><span class="brand-copy"><strong>UDYAMINDIAN</strong><span>Udyam and MSME Registration Private Consultancy Service</span></span></a>
+                    <p>We provide independent consultancy support for Udyam Registration, certificate downloads, updates and related services. We are not affiliated with the Government of India.</p>
+                    <p class="footer-disclaimer"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i><span>Private consultancy — not affiliated with the Government of India</span></p>
+                </div>
+                <div class="footer-quick-links">
+                    <h2>Quick links</h2>
+                    <a href="#about-us">About us</a>
+                    <a href="#blog">Blog</a>
+                    <a href="https://udyamregistration.gov.in/" target="_blank" rel="noopener noreferrer">NIC Code</a>
+                    <a href="#enquiry">Enquiry</a>
+                    <a href="https://udyamregistration.gov.in/" target="_blank" rel="noopener noreferrer">Udyam certificate information</a>
+                </div>
+                <div class="footer-contact">
+                    <div class="footer-contact-group">
+                        <h2>Contact us</h2>
+                        <a href="mailto:care@udyamindian.com">care@udyamindian.com</a>
+                        <a href="tel:+919031675081">+91 90316 75081</a>
+                    </div>
+                    <div class="footer-contact-group">
+                        <h2>Information</h2>
+                        <a href="mailto:care@udyamindian.com?subject=Privacy%20Policy%20Enquiry">Privacy Policy enquiry</a>
+                        <a href="#service-fees">Terms & Conditions</a>
+                        <a href="#documents">Cancellation & Refund</a>
+                        <a href="#services">Service delivery information</a>
+                        <a href="mailto:care@udyamindian.com?subject=Complaint">Complaint</a>
+                        <a href="mailto:care@udyamindian.com?subject=Application%20Status%20Enquiry">Track an enquiry</a>
+                        <a href="#enquiry">Contact us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>
+                    <p>&copy; <a href="https://olfant.com/" target="_blank" rel="noopener noreferrer">Olfant</a>, 2026 Company - All Rights Reserved.</p>
+                    <p>Owned By Olfant</p>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="https://udyamregistration.gov.in/" target="_blank" rel="noopener noreferrer">Official Portal</a>
+                    <span aria-hidden="true">·</span>
+                    <a href="mailto:care@udyamindian.com">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>
