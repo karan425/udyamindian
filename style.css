@@ -3509,3 +3509,149 @@ img {
         transition-duration: .01ms !important;
     }
 }
+
+.content-page {
+    background: #f7f9fd;
+}
+
+.content-page-section {
+    padding: clamp(38px, 6vw, 68px) 0;
+}
+
+.content-page-container {
+    max-width: 1000px;
+}
+
+.content-page-header {
+    margin: 0 auto 26px;
+    text-align: center;
+}
+
+.content-page-header h1 {
+    margin: 8px 0 0;
+    color: #0b3278;
+    font-size: clamp(30px, 4vw, 42px);
+    font-weight: 800;
+    letter-spacing: -.035em;
+    line-height: 1.2;
+}
+
+.content-page-header p {
+    margin: 10px 0 0;
+    color: #536782;
+    font-size: 15px;
+}
+
+.content-page-card {
+    padding: clamp(22px, 4vw, 40px);
+    border: 1px solid #dfe8f4;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 12px 36px rgb(26 69 123 / 8%);
+}
+
+.content-page-block + .content-page-block {
+    margin-top: 28px;
+    padding-top: 24px;
+    border-top: 1px solid #e7eef8;
+}
+
+.content-page-block h2,
+.content-page-block h5 {
+    margin: 0 0 10px;
+    color: #0b3278;
+    font-size: clamp(19px, 2.4vw, 23px);
+    font-weight: 800;
+    letter-spacing: -.02em;
+}
+
+.content-page-block p,
+.content-page-list {
+    color: #536782;
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+.content-page-block p {
+    margin: 0 0 12px;
+}
+
+.content-page-block p:last-child {
+    margin-bottom: 0;
+}
+
+.content-page-block a {
+    color: #0b4fae;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: #a9c6ed;
+    text-underline-offset: 2px;
+}
+
+.content-page-list {
+    display: grid;
+    gap: 12px;
+    margin: 0;
+    padding-left: 22px;
+}
+
+.content-page-list li {
+    padding-left: 3px;
+}
+
+.content-page-list strong {
+    color: #173b70;
+}
+
+.content-page-note {
+    display: block;
+    max-width: 100%;
+    margin-top: 18px;
+    padding: 13px 16px;
+    border: 1px solid #cfe0f8;
+    border-radius: 8px;
+    background: #eaf2ff;
+    color: #405875;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.content-page-note strong {
+    color: #173b70;
+}
+
+.content-page-note p {
+    margin: 0;
+}
+
+.content-page-note p + p {
+    margin-top: 10px;
+}
+
+@media (max-width: 520px) {
+    .content-page-section {
+        padding: 34px 0;
+    }
+
+    .content-page-header {
+        margin-bottom: 20px;
+    }
+
+    .content-page-header p {
+        font-size: 13px;
+    }
+
+    .content-page-card {
+        padding: 20px 17px;
+    }
+
+    .content-page-block p,
+    .content-page-list {
+        font-size: 13px;
+    }
+
+    .content-page-note {
+        font-size: 11px;
+        padding: 12px;
+    }
+}
