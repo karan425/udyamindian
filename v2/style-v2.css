@@ -1,0 +1,130 @@
+/* style-v2.css — load AFTER style.css. Replaces the template look: flat surfaces, one rule colour, a price list instead of card grids. */
+:root{--navy:#061f7a;--blue:#0a5bd8;--ink:#14192e;--mute:#55607a;--rule:#d7ddec;--wash:#f2f5fb;
+--head:"Bricolage Grotesque","Segoe UI",Arial,sans-serif;font-family:"Public Sans","Segoe UI",Arial,sans-serif}
+body{color:var(--ink);font-size:15px}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+*,*::before,*::after{box-shadow:none!important}
+.benefit-card,.document-card,.service-card,.why-choose-card,.application-step{transform:none!important}
+
+/* header */
+.topbar{background:var(--navy)}
+.header::after{display:none}
+.header{border-bottom:1px solid var(--rule);box-shadow:none}
+.brand-copy strong{color:var(--navy);font-family:var(--head);font-size:22px;font-weight:700;letter-spacing:-.01em}
+.brand-copy span{font-size:10px}
+.nav-links a{color:var(--ink);font-size:13px}
+.nav-links a:hover{color:var(--blue);text-decoration:underline;text-underline-offset:6px}
+
+/* headings */
+.hero h1,.section-heading h2,.documents-heading h2,.services-title,.form-card h2{font-family:var(--head);color:var(--ink);font-weight:700;letter-spacing:-.025em}
+.section-heading,.closing-content-section .section-heading,.application-process .section-heading{margin:0 0 28px;text-align:left}
+.section-heading h2,.documents-heading h2,.services-title{margin:0;font-size:clamp(26px,3vw,34px);line-height:1.15}
+.section-heading>p,.documents-heading>p{max-width:60ch;margin:10px 0 0;color:var(--mute);font-size:15px}
+
+/* hero */
+.hero{padding:clamp(40px,6vw,72px) 0;background:#fff;border-bottom:1px solid var(--rule)}
+.hero::after{display:none}
+.hero h1{max-width:15ch;margin:0;font-size:clamp(34px,4.6vw,54px);line-height:1.05}
+.hero h1 span{display:inline;color:inherit}
+.hero-intro{max-width:52ch;margin-top:20px;color:var(--mute);font-size:16px}
+.button,.button-primary,.button-submit,.service-cta{border-radius:4px;box-shadow:none}
+.button-primary{background:var(--blue);font-size:14px}
+.button-primary:hover{background:var(--navy)}
+.hero-actions .button+.button{border-color:var(--navy);color:var(--navy)}
+.hero-actions .button+.button:hover{background:var(--wash)}
+.form-card{border:1px solid var(--rule);border-top:4px solid var(--navy);border-radius:4px;background:var(--wash)}
+.form-heading{background:none;color:var(--ink);padding:22px 24px 0}
+.form-card h2{color:var(--ink);font-size:22px}
+.form-heading p{color:var(--mute);font-size:13px}
+.field label{font-size:13px;color:var(--ink)}
+.field input,.field select{border-radius:4px;font-size:14px;background-color:#fff}
+.form-disclaimer{background:#fff;border-radius:4px;font-size:12px}
+
+/* sections: alternate white / wash, no cards */
+.section,.documents-section,.closing-content-section,.application-process,.services-section{padding:clamp(44px,6vw,76px) 0}
+.section,.closing-content-section{background:#fff}
+.documents-section,.application-process{background:var(--wash)}
+.services-section{background:#fff}
+.benefit-icon,.document-icon,.why-choose-icon,.application-step-icon{display:none!important}
+.benefit-grid,.why-choose-grid,.document-grid{gap:0 48px}
+.benefit-card,.why-choose-card,.document-card{min-height:0;padding:20px 0 24px;border:0;border-top:1px solid var(--ink);border-radius:0;background:none}
+.benefit-card h3,.why-choose-card h3,.document-card h3,.additional-heading h3,.application-step h3{margin:0;color:var(--ink);font-family:var(--head);font-size:19px;font-weight:600;letter-spacing:-.01em}
+.benefit-card p,.why-choose-card p,.document-card-heading p,.application-step p{margin-top:6px;color:var(--mute);font-size:15px;line-height:1.6}
+.document-card-heading{min-height:0;padding:0;border:0}
+.document-list{margin-top:14px;gap:12px}
+.document-list li,.additional-row strong{padding-left:18px;font-size:15px;color:var(--ink)}
+.document-list strong,.additional-row strong{font-size:15px;color:var(--ink);font-weight:600}
+.document-list span,.additional-row span{font-size:14px;color:var(--mute)}
+.document-list li::before,.additional-row strong::before{top:0;width:auto;height:auto;background:none;border-radius:0;color:var(--blue);content:"–";font-size:16px;font-weight:700}
+.additional-documents{margin-top:32px;padding:20px 0 0;border:0;border-top:1px solid var(--ink);border-radius:0;background:none}
+.additional-heading{border:0;padding-bottom:6px}
+.additional-row{border-color:var(--rule);padding:12px 0}
+
+/* services: a rate card, price is the loudest thing on the page */
+.services-title{width:auto;margin:0 0 12px;padding:0;text-align:left}
+.services-title::after{display:none}
+.services-disclaimer{width:auto;justify-content:flex-start;margin:0 0 28px;padding:0;border:0;background:none;color:var(--mute);font-size:15px}
+.service-grid{display:block;border-top:2px solid var(--navy)}
+.service-card{display:grid;grid-template-columns:minmax(0,1fr) 130px 190px;grid-template-areas:"t price cta" "p price cta";column-gap:28px;align-items:center;min-height:0;padding:22px 0;border:0;border-bottom:1px solid var(--rule);border-radius:0;background:none}
+.service-card h3{grid-area:t;min-height:0;margin:0;color:var(--ink);font-family:var(--head);font-size:20px;font-weight:600}
+.service-card p{grid-area:p;margin:4px 0 0;max-width:62ch;color:var(--mute);font-size:14px}
+.service-price{grid-area:price;margin:0;padding:0;border:0;color:var(--navy);font-family:var(--head);font-size:30px;font-weight:700;letter-spacing:-.02em;font-variant-numeric:tabular-nums;text-align:right}
+.service-cta{grid-area:cta;width:100%;min-height:44px;border:1px solid var(--blue);background:none;color:var(--blue);font-size:14px}
+.service-cta:hover{background:var(--blue);color:#fff;transform:none}
+
+/* steps: a real sequence, so numbers stay */
+.application-steps{gap:0 32px;counter-reset:s}
+.application-step{padding:18px 0 0;border:0;border-top:1px solid var(--ink);border-radius:0;background:none;text-align:left;counter-increment:s}
+.application-step::before{position:static;display:block;width:auto;height:auto;margin-bottom:10px;padding:0;border:0;background:none;color:var(--blue);content:counter(s);font-family:var(--head);font-size:34px;font-weight:700;line-height:1}
+.process-safety-note{border-radius:4px}
+.process-cta{text-align:left}
+
+/* footer */
+.footer{background:var(--navy)}
+.footer-brand .brand-copy strong{font-family:var(--head)}
+.footer-disclaimer{border-radius:4px}
+
+@media(max-width:760px){
+.service-card{grid-template-columns:1fr auto;grid-template-areas:"t t" "p p" "price cta";row-gap:6px;padding:20px 0}
+.service-card .service-cta{width:auto;min-width:130px;padding:0 20px}
+.service-price{text-align:left;font-size:26px;margin-top:8px}
+.benefit-grid,.why-choose-grid,.document-grid,.application-steps{grid-template-columns:1fr}
+.hero h1{max-width:none}}
+
+/* ---------- inner pages: application forms ---------- */
+.application-form-page,.content-page{background:#fff}
+.application-form-intro{padding:clamp(36px,5vw,60px) 0 28px;background:#fff;text-align:left}
+.application-form-intro h1{margin:0;font-family:var(--head);color:var(--ink);font-size:clamp(28px,4vw,42px);font-weight:700;letter-spacing:-.025em;line-height:1.1}
+.application-form-intro p:not(.application-form-note){max-width:62ch;margin:14px 0 0;color:var(--mute);font-size:16px;line-height:1.65;text-align:left}
+.application-form-note,.application-form-fee-note{max-width:none;margin:20px 0 0;padding:12px 16px;border:0;border-left:3px solid var(--navy);border-radius:0;background:var(--wash);color:var(--ink);font-size:13px}
+.application-form-note .fa{color:var(--navy)}
+.application-form-section{padding:12px 0 clamp(44px,6vw,72px);background:#fff}
+.application-form-card{border:1px solid var(--rule);border-top:4px solid var(--navy);border-radius:4px;background:#fff}
+.application-form-card-header{padding:22px 28px;border-bottom:1px solid var(--rule);background:var(--wash);color:var(--ink);text-align:left}
+.application-form-card-header h2{margin:0;font-family:var(--head);color:var(--ink);font-size:24px;font-weight:700;letter-spacing:-.02em}
+.application-form-card-header p{margin:6px 0 0;color:var(--mute);font-size:14px}
+.application-form-card .form-label,.application-form-card .form-group>label{margin-bottom:6px;color:var(--ink);font-size:14px;font-weight:600}
+.application-form-card .form-group{margin-bottom:20px}
+.application-form-card .form-control,.application-form-card .form-select{min-height:46px;border-radius:4px;font-size:15px}
+.application-form-consents{border-radius:4px;border-color:var(--rule);background:var(--wash)}
+.application-form-consents .form-check-label,.application-form-card .form-check-label{color:var(--ink);font-size:13px}
+.application-form-captcha{border-radius:4px;background:#fff}
+.application-form-card .btn-primary,.application-form-submit .btn{min-height:46px;border:0;border-radius:4px;background:var(--blue);font-size:15px;font-weight:700}
+.application-form-card .btn-primary:hover,.application-form-submit .btn:hover{background:var(--navy)}
+.footer-source-note{background:var(--wash);border-top:1px solid var(--rule)}
+.footer-source-note-inner{color:var(--mute);font-size:13px}
+
+/* ---------- inner pages: about us ---------- */
+.content-page-section{padding:clamp(40px,6vw,72px) 0}
+.content-page-container{max-width:860px}
+.content-page-header{margin:0 0 32px;text-align:left}
+.content-page-header h1{margin:0;font-family:var(--head);color:var(--ink);font-size:clamp(32px,4.4vw,48px);font-weight:700;letter-spacing:-.03em;line-height:1.08}
+.content-page-header p{max-width:52ch;margin-top:12px;color:var(--mute);font-size:17px}
+.content-page-card{padding:0;border:0;border-radius:0;background:none}
+.content-page-block,.content-page-block+.content-page-block{margin:0;padding:24px 0 28px;border-top:1px solid var(--ink)}
+.content-page-block h2,.content-page-block h5{margin:0 0 12px;font-family:var(--head);color:var(--ink);font-size:24px;font-weight:600;letter-spacing:-.015em}
+.content-page-block p,.content-page-list{max-width:68ch;color:var(--ink);font-size:16px;line-height:1.7}
+.content-page-block a{color:var(--blue)}
+.content-page-list strong{color:var(--ink)}
+.content-page-note{margin-top:8px;padding:0;border:0;background:none}
+@media(max-width:520px){.content-page-block p,.content-page-list{font-size:15px}.application-form-card-header{padding:18px 16px}}

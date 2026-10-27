@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#1268d6">
+    <meta name="description" content="Udyam Indian provides independent consultancy support for Udyam and MSME registration.">
+    <title>Instant Udyam | Udyam Indian</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="style-v2.css">
+</head>
+<body>
+    <div class="topbar">
+        <div class="container topbar-inner">
+            <p class="helpline">Helpline (Mon–Sat) - (09:00 AM to 06:00 PM)</p>
+            <div class="top-links">
+                <a href="mailto:care@udyamindian.com">care@udyamindian.com</a>
+                <a href="tel:+919031675081">+91 90316 75081</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="brand-row">
+                <a class="brand" href="./index.html" aria-label="Udyam Indian home">
+                    <img class="brand-logo" src="udyam-logo.webp" alt="">
+                    <span class="brand-copy"><strong>UDYAMINDIAN</strong><span>Udyam and MSME Registration Private Consultancy Service</span></span>
+                </a>
+                <button class="nav-toggle" type="button" aria-label="Toggle main navigation" aria-expanded="false" aria-controls="service-navigation">
+                    <i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+            </div>
+            <nav class="nav" id="service-navigation" aria-label="Main navigation">
+                <div class="nav-links">
+                    <a href="udyam-registration-online.html">New Registration</a>
+                    <a href="#service-update">Edit Certificate</a>
+                    <a href="#service-download">Print Certificate</a>
+                    <a href="#service-forgot">Forgot Udyam</a>
+                    <a href="#service-reregistration">Re-Registration</a>
+                    <a href="#service-annexure">Annexure Certificate</a>
+                    <a href="#service-cancel">Cancel Udyam</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="application-form-page">
+        <section class="application-form-intro">
+            <div class="container">
+                <h1 id="dynamic-h1">Instant Apply Form for Udyam Services</h1>
+                <p id="dynamic-paragraph">Get support with Udyam / MSME registration through a clear, guided process. Choose the service you need and share your contact details to get started.</p>
+                <p class="application-form-note"><i class="fa fa-info-circle" aria-hidden="true"></i><span>This is a private consultancy service, not a Government of India website. Udyam registration on the official government portal is free.</span></p>
+            </div>
+        </section>
+
+        <section class="application-form-section" aria-labelledby="dynamic-h2">
+            <div class="container">
+                <form class="application-form" action="./submit.php" method="post" enctype="multipart/form-data">
+                    <div class="card application-form-card">
+                        <div class="card-header application-form-card-header">
+                            <h2 id="dynamic-h2">Instant MSME / Udyam Registration Form</h2>
+                            <p>Complete the required fields below. Our team can guide you through the next steps.</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <label class="form-label" for="serviceType">Service Type <span class="text-danger">*</span></label>
+                                    <select class="form-select" name="service_type" id="serviceType" required>
+                                        <option value="">Choose a service</option>
+                                        <option value="new udyam registration">New Udyam Registration</option>
+                                        <option value="udyam re registration">Udyam Re-Registration</option>
+                                        <option value="update udyam certificate">Update Udyam Certificate</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="firstName">Applicant Name <span class="text-danger">*</span></label>
+                                    <input type="text" maxlength="40" name="applicant_name" class="form-control" id="firstName" autocomplete="name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="MobileNumber">Mobile Number <span class="text-danger">*</span></label>
+                                    <input type="tel" inputmode="numeric" maxlength="10" minlength="10" name="mobile_number" class="form-control" id="MobileNumber" autocomplete="tel" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="Email">Email <span class="text-danger">*</span></label>
+                                    <input type="email" name="email_id" class="form-control" id="Email" autocomplete="email" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="vercode">Verification Code <span class="text-danger">*</span></label>
+                                    <div class="application-form-captcha">
+                                        <img src="./captcha.php" alt="Verification code image">
+                                    </div>
+                                    <input type="text" id="vercode" name="vercode" class="form-control mt-3" autocomplete="off" required>
+                                </div>
+                                <div class="col-12">
+                                    <div class="application-form-consents">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="tmc1" name="tmc1" value="Checked" required>
+                                            <label class="form-check-label" for="tmc1">I will provide Aadhaar and PAN details for Udyam registration that have not yet been registered with Udyam or Udyog Aadhaar.</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="tmc2" name="tmc2" value="Checked" required>
+                                            <label class="form-check-label" for="tmc2">I will provide PAN details for Udyam registration that have not yet been registered with Udyam or Udyog Aadhaar.</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="tmc3" name="tmc3" value="Checked" required>
+                                            <label class="form-check-label" for="tmc3">I am the applicant (owner of the Udyam Registration Number used in this application) and agree to provide details required for Udyam certificate processing. I will enter any OTP or passcode myself on the official portal and will not share it with anyone.</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="hidden" name="form_type" value="Instant Apply">
+                            <input type="hidden" name="form_name" value="Instant Apply">
+                            <input type="hidden" name="form_id" value="">
+                            <div class="application-form-submit">
+                                <button type="submit" class="btn btn-primary fcs-submit-button">Submit application</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <p class="application-form-fee-note"><strong>Disclaimer:</strong> This website is managed by private consultants and is <strong>not affiliated with the Government of India.</strong> The amount paid is against advisory charges. Udyam Aadhar / Udyam Registration carries no government fees.</p>
+            </div>
+        </section>
+    </main>
+
+    <section class="application-process" id="process">
+        <div class="container">
+            <div class="section-heading">
+                <h2>How it works</h2>
+                <p>Follow these steps to request consultancy support for your Udyam service.</p>
+            </div>
+            <ol class="application-steps">
+                <li class="application-step">
+                    <h3>Fill the Application Form</h3>
+                    <p>Choose your service and enter your contact details in the form above.</p>
+                </li>
+                <li class="application-step">
+                    <h3>Review Consultancy Charges</h3>
+                    <p>Confirm the service scope and consultancy fee before arranging payment with our team. Government portal registration is free.</p>
+                </li>
+                <li class="application-step">
+                    <h3>Complete OTP Verification</h3>
+                    <p>Enter any OTP yourself only on the official portal. Our team will never ask you to share it.</p>
+                </li>
+                <li class="application-step">
+                    <h3>Get Service Updates</h3>
+                    <p>Contact our team by email or phone for guidance on the next steps for your selected service.</p>
+                </li>
+            </ol>
+            <p class="process-safety-note"><strong>Security reminder:</strong> Never share your OTP, passwords or sensitive login credentials with anyone. This enquiry form is a visual prototype and does not submit applications or process payments.</p>
+            <div class="process-cta"><a class="button button-primary" href="#enquiry">Ask us about a service</a></div>
+        </div>
+    </section>
+
+    <section class="footer-source-note" aria-label="Registration information source">
+        <div class="container footer-source-note-inner">
+            <span class="footer-source-note-item"><i class="fa fa-calendar" aria-hidden="true"></i><span>Last updated: <strong><time datetime="2026-10-26">26 October 2026</time></strong></span></span>
+            <span class="footer-source-note-item"><i class="fa fa-university" aria-hidden="true"></i><span>Source: <a href="https://udyamregistration.gov.in/" target="_blank" rel="noopener noreferrer">Ministry of MSME, Govt. of India</a></span></span>
+        </div>
+    </section>
+
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a class="footer-brand" href="#home"><img class="brand-logo" src="udyam-logo.webp" alt=""><span class="brand-copy"><strong>UDYAMINDIAN</strong><span>Udyam and MSME Registration Private Consultancy Service</span></span></a>
+                    <p>We provide independent consultancy support for Udyam Registration, certificate downloads, updates and related services. We are not affiliated with the Government of India.</p>
+                    <p class="footer-disclaimer"><i class="fa fa-shield" aria-hidden="true"></i><span>Private consultancy — not affiliated with the Government of India</span></p>
+                </div>
+                <div class="footer-quick-links">
+                    <h2>Quick links</h2>
+                    <a href="./about-us.html">About us</a>
+                    <a href="#blog">Blog</a>
+                    <a href="https://udyamregistration.gov.in/" target="_blank" rel="noopener noreferrer">NIC Code</a>
+                    <a href="#enquiry">Enquiry</a>
+                    <a href="https://udyamregistration.gov.in/" target="_blank" rel="noopener noreferrer">Udyam certificate information</a>
+                </div>
+                <div class="footer-contact">
+                    <div class="footer-contact-group">
+                        <h2>Contact us</h2>
+                        <a href="mailto:care@udyamindian.com">care@udyamindian.com</a>
+                        <a href="tel:+919031675081">+91 90316 75081</a>
+                    </div>
+                    <div class="footer-contact-group">
+                        <h2>Information</h2>
+                        <a href="mailto:care@udyamindian.com?subject=Privacy%20Policy%20Enquiry">Privacy Policy enquiry</a>
+                        <a href="#service-fees">Terms & Conditions</a>
+                        <a href="#documents">Cancellation & Refund</a>
+                        <a href="#services">Service delivery information</a>
+                        <a href="mailto:care@udyamindian.com?subject=Complaint">Complaint</a>
+                        <a href="mailto:care@udyamindian.com?subject=Application%20Status%20Enquiry">Track an enquiry</a>
+                        <a href="#enquiry">Contact us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>
+                    <p>&copy; <a href="https://olfant.com/" target="_blank" rel="noopener noreferrer">Olfant</a>, 2026 Company - All Rights Reserved.</p>
+                    <p>Owned By Olfant</p>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="https://udyamregistration.gov.in/" target="_blank" rel="noopener noreferrer">Official Portal</a>
+                    <span aria-hidden="true">·</span>
+                    <a href="mailto:care@udyamindian.com">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
