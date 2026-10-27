@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#1268d6">
+    <meta name="description" content="Learn about Udyam Indian, an independent consultancy offering support for Udyam and MSME registration.">
+    <title>Udyam Registration | Udyam Indian</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="topbar">
+        <div class="container topbar-inner">
+            <p class="helpline">Helpline (Mon–Sat) - (09:00 AM to 06:00 PM)</p>
+            <div class="top-links">
+                <a href="mailto:care@udyamindian.com">care@udyamindian.com</a>
+                <a href="tel:+919031675081">+91 90316 75081</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="brand-row">
+                <a class="brand" href="./index.html" aria-label="Udyam Indian home">
+                    <img class="brand-logo" src="udyam-logo.webp" alt="">
+                    <span class="brand-copy"><strong>UDYAMINDIAN</strong><span>Udyam and MSME Registration Private Consultancy Service</span></span>
+                </a>
+                <button class="nav-toggle" type="button" aria-label="Toggle main navigation" aria-expanded="false" aria-controls="service-navigation">
+                    <i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+            </div>
+            <nav class="nav" id="service-navigation" aria-label="Main navigation">
+                <div class="nav-links">
+                    <a href="udyam-registration-online.html">New Registration</a>
+                    <a href="./index.html#service-update">Edit Certificate</a>
+                    <a href="./index.html#service-download">Print Certificate</a>
+                    <a href="./index.html#service-forgot">Forgot Udyam</a>
+                    <a href="./index.html#service-reregistration">Re-Registration</a>
+                    <a href="./index.html#service-annexure">Annexure Certificate</a>
+                    <a href="./index.html#service-cancel">Cancel Udyam</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="application-form-page">
+        <section class="application-form-intro" id="-registration">
+            <div class="container">
+                <span class="eyebrow">PERSONALIZED APPLICATION SUPPORT</span>
+                <h1 id="udyam_reg_title">Apply New Udyam / MSME Registration Certificate Online</h1>
+                <p id="udyam_reg_paragraph">Apply for New Udyam Registration Online and get your MSME Certificate quickly without any problem. Access government benefits like low-interest loans, subsidies, tax benefits, and other schemes</p>
+                <p class="application-form-note"><i class="fa fa-info-circle" aria-hidden="true"></i><span>This is a private consultancy service, not a Government of India website. Udyam registration on the official government portal is free.</span></p>
+            </div>
+        </section>
+
+        <section class="application-form-section" aria-labelledby="dynamic-h2">
+            <div class="container">
+                <form class="application-form" id="main-form" action="submit.php" method="post" enctype="multipart/form-data">
+                    <div class="card application-form-card">
+                        <div class="card-header application-form-card-header">
+                            <h2 id="dynamic-h2">MSME / Udyam Registration Form</h2>
+                            <p>Complete the required fields below. Our team can guide you through the next steps.</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <label class="form-label" for="applicant_name">NAME OF THE APPLICANT / आवेदक का नाम <span class="required">*</span></label>
+                                    <input type="text" class="form-control" name="applicant_name" id="applicant_name" value="" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="mobile_number">MOBILE NUMBER OF APPLICANT / आवेदक का मोबाइल नंबर<span class="required"> *</span></label>
+                                    <input type="tel" maxlength="10" minlength="10" id="mobile_number" class="form-control" name="mobile_number" value="" required="">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="email_id" >EMAIL ID OF APPLICANT / आवेदक की ईमेल आईडी<span class="required"> *</span></label>
+                                    <input type="text" class="form-control" name="email_id" id="email_id" value="" required="">
+                                </div>
+                                <div class="col-12">
+                                    <div class="row g-4">
+                                        <div class="col-md-4">
+                                            <label class="form-label" for="office_pincode">PINCODE / पिन कोड <span class="required"> *</span></label>
+                                            <input type="text" id="office_pincode" maxlength="6" class="form-control" name="office_pincode" value="" required="">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label" for="office-state">State / राज्य <span class="required"> *</span></label>
+                                            <select id="office-state" class="form-select" name="office_state" onchange="makeSubmenuOffice(this.value)" required="">
+                                                <option value="">Select State</option>
+                                                <option value="Andaman_And_Nicobar_Island"> ANDAMAN AND NICOBAR ISLANDS / अंदमान और निकोबार द्वीपसमूह</option>
+                                                <option value="Andhra_Pradesh">ANDHRA PRADESH / आन्ध्र प्रदेश </option>
+                                                <option value="Arunachal_Pradesh"> ARUNACHAL PRADESH / अरुणाचल प्रदेश</option>
+                                                <option value="Assam"> ASSAM / असम</option>
+                                                <option value="Bihar"> BIHAR / बिहार</option>
+                                                <option value="Chhattisgarh"> CHHATTISGARH / छत्तीसगढ़</option>
+                                                <option value="Chandigarh"> CHANDIGARH / चंडीगढ़ </option>
+                                                <option value="Dadara">DADAR AND NAGAR HAVELI / दादरा और नगर हवेली</option>
+                                                <option value="Daman"> DAMAN AND DIU / दमन और दीव</option>
+                                                <option value="Delhi"> DELHI / दिल्ली</option>
+                                                <option value="Goa">GOA / गोवा</option>
+                                                <option value="Gujarat"> GUJARAT / गुजरात</option>
+                                                <option value="Haryana"> HARYANA / हरियाणा</option>
+                                                <option value="Himachal_Pradesh"> HIMACHAL PRADESH / हिमाचल प्रदेश</option>
+                                                <option value="Jammu_and_Kashmir"> JAMMU AND KASHMIR / जम्मू और कश्मीर</option>
+                                                <option value="Jharkhand"> JHARKHAND / झारखण्ड</option>
+                                                <option value="Karnataka"> KARNATAKA / कर्णाटक</option>
+                                                <option value="Kerala"> KERALA / केरल</option>
+                                                <option value="Ladakh"> LADAKH / लद्दाख</option>
+                                                <option value="Lakshadweep"> LAKSHADWEEP / लक्षद्वीप</option>
+                                                <option value="Madhya_Pradesh"> MADHYA PRADESH / मध्य प्रदेश</option>
+                                                <option value="Maharashtra"> MAHARASHTRA / महाराष्ट्र</option>
+                                                <option value="Manipur"> MANIPUR / मणिपुर</option>
+                                                <option value="Meghalaya"> MEGHALAYA / मेघालय</option>
+                                                <option value="Mizoram"> MIZORAM / मिज़ोरम</option>
+                                                <option value="Nagaland"> NAGALAND / नागालैण्ड</option>
+                                                <option value="Odisha"> ODISHA / ओड़िशा</option>
+                                                <option value="Puducherry"> PUDUCHERRY / पुडुचेरी</option>
+                                                <option value="Punjab"> PUNJAB / पंजाब</option>
+                                                <option value="Rajasthan"> RAJASTHAN / राजस्थान</option>
+                                                <option value="Sikkim"> SIKKIM / सिक्किम</option>
+                                                <option value="Tamil_Nadu"> TAMIL NADU / तमिलनाडु</option>
+                                                <option value="Telangana"> TELANGANA / तेलंगाना</option>
+                                                <option value="Tripura"> TRIPURA / त्रिपुरा</option>
+                                                <option value="Uttar_Pradesh"> UTTAR PRADESH / उत्तर प्रदेश</option>
+                                                <option value="Uttarakhand"> UTTARAKHAND / उत्तराखण्ड</option>
+                                                <option value="West_Bengal"> WEST BENGAL / पश्चिम बंगाल</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label" for="office-district">District / जिला <span class="required">*</span></label>
+                                            <select class="form-select" name="office_district" id="office-district" required="">
+                                                <option value="" selected="selected">Please select District</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="gender">GENDER</label>
+                                    <select class="form-select" id="gender" name="gender">
+                                        <option value="">--Select--</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="social_category">SOCIAL CATEGORY / सामाजिक श्रेणी</label>
+                                    <select class="form-select"  id="social_category" name="social_category" required="">
+                                        <option value="">--Select--</option>
+                                        <option value="General">General</option>
+                                        <option value="SC">SC</option>
+                                        <option value="ST">ST</option>
+                                        <option value="OBC">OBC</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="physically_handicapped">ARE YOU PHYSICALLY HANDICAPPED?</label>
+                                    <select class="form-select" id="physically_handicapped" name="physically_handicapped">
+                                        <option value="">--Select--</option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="business_name">BUSINESS NAME / व्यवसाय नाम</label>
+                                    <input type="text" class="form-control" id="business_name" name="business_name" value="">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="date_of_commencement_of_business">DATE OF COMMENCEMENT OF BUSINESS / व्यवसाय के प्रारंभ होने की तिथि</label>
+                                    <input type="text" id="date_of_commencement_of_business" name="date_of_commencement_of_business" class="form-control" placeholder="dd/mm/yyyy" size="10" maxlength="10" onkeyup="this.value=this.value.replace(/^(\d\d)(\d)$/g,'$1/$2').replace(/^(\d\d\/\d\d)(\d+)$/g,'$1/$2').replace(/[^\d\/]/g,'')" value="">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="office_address">BUSINESS OFFICE ADDRESS / व्यापार कार्यालय का पता <span class="required"> *</span></label>
+                                    <input type="text" class="form-control" id="office_address" name="office_address" value="" required="">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="type_of_organisation">TYPE OF ORGANISATION / संगठन का प्रकार<span class="required"> *</span>
+                                    </label>
+                                    <select id="type_of_organisation" class="form-select" name="type_of_organisation">
+                                        <option value="">--Select--</option>
+                                        <option value="Proprietorship Firm" >Proprietorship</option>
+                                        <option value="Partnership Firm">Partnership Firm</option>
+                                        <option value="Hindu Undivided Family">Hindu Undivided Family</option>
+                                        <option value="Limited Liability Partnership">Limited Liability Partnership</option>
+                                        <option value="Private Limited">Private Limited</option>
+                                        <option value="Public Limited">Public Limited</option>
+                                        <option value="Self Help Group">Self Help Group</option>
+                                        <option value="Government Department">Government Department</option>
+                                        <option value="Society">Society</option>
+                                        <option value="Trust">Trust</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="main_business_activity_of_enterprise">MAIN BUSINESS ACTIVITY OF ENTERPRISE / उद्यम की मुख्य व्यावसायिक गतिविधि
+                                    </label>
+                                    <select id="main_business_activity_of_enterprise" class="form-select" name="main_business_activity_of_enterprise">
+                                        <option value="">--Select--</option>
+                                        <option value="Manufacturer">Manufacturer</option>
+                                        <option value="Service Provider">Service Provider</option>
+                                        <option value="Traders">Traders</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="investment_in_plant_and_machinery">INVESTMENT IN PLANT AND MACHINERY / बिजनेस निवेश</label>
+                                    <input type="text" id="investment_in_plant_and_machinery" class="form-control" name="investment_in_plant_and_machinery">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="annual_turnover">ANNUAL TURNOVER / वार्षिक कारोबार</label>
+                                    <input type="text" class="form-control" id="annual_turnover" name="annual_turnover">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="aadhaar_number">AADHAAR NUMBER / आधार संख्या <span class="required">*</span></label>
+                                    <input type="text" class="form-control" maxlength="12" minlength="12" name="aadhaar_number" id="aadhaar_number" value="">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="pan_card_number">PAN CARD NUMBER / पैन कार्ड नंबर <span class="required">*</span></label>
+                                    <input type="text" class="form-control" id="pan_card_number" name="pan_card_number" pattern="(^([a-zA-Z]{5})([0-9]{4})([a-zA-Z]{1})$)" oninvalid="this.setCustomValidity('invalid pan number!')" oninput="this.setCustomValidity('')" value="">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">DO YOU HAVE GST?</label>
+                                    <select class="form-select" name="gst_avl">
+                                        <option value="--Select--" disabled selected hidden>--Select--</option>
+                                        <option value="1">YES</option>
+                                        <option value="0">NO</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="bank_name" >BANK NAME / बैंक का नाम</label>
+                                    <input type="text" class="form-control" id="bank_name" name="bank_name" value="">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="bank_account_number">BANK ACCOUNT NUMBER / बैंक खाता संख्या</label>
+                                    <input type="text" class="form-control" id="bank_account_number" name="bank_account_number" value="">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="ifsc_code">IFSC CODE / आईएफएससी कोड</label>
+                                    <input type="text" class="form-control" id="ifsc_code" name="ifsc_code" value="">
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">Number of persons employed / व्यक्ति नियोजित</label>
+                                    <div class="row g-4">
+                                        <div class="col-lg-3 col-12">
+                                            <label class="form-label" for="num1">MALE / पुरुष</label>
+                                            <input type="number" class="form-control" name="persons_employed_male" id="num1" min="0" onchange="sum();" oninput="validity.valid||(value='');">
+                                        </div>
+                                        <div class="col-lg-3 col-12">
+                                            <label class="form-label" for="num2" >FEMALE / महिला</label>
+                                            <input type="number" class="form-control" name="persons_employed_female" id="num2" min="0" onchange="sum();" oninput="validity.valid||(value='');">
+                                        </div>
+                                        <div class="col-lg-3 col-12">
+                                            <label class="form-label" for="num3">OTHER / अन्य</label>
+                                            <input type="number" for="num3" class="form-control" name="persons_employed_other" id="num3" min="0" onchange="sum();" oninput="validity.valid||(value='');">
+                                        </div>
+                                        <div class="col-lg-3 col-12">
+                                            <label class="form-label" for="total_sum">TOTAL / संपूर्ण</label>
+                                            <input type="number" class="form-control" name="persons_employed_total" id="total_sum" readonly="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="additional_details_about_business">ADDITIONAL DETAILS ABOUT BUSINESS / व्यापार के बारे में अतिरिक्त विवरण
+                                    </label>
+                                    <input type="text" class="form-control" id="additional_details_about_business" name="additional_details_about_business">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="vercode">Verification Code <span class="required">*</span></label>
+                                    <div class="application-form-captcha">
+                                        <img src="/captcha.php" alt="Verification code">
+                                    </div>
+                                    <input type="text" name="vercode" id="vercode" class="form-control mt-3" placeholder="Verification Code" required>
+                                </div>
+                                <div class="col-12">
+                                    <div class="application-form-consents">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" name="terms_of_service" id="disclaimer" required>
+                                            <label class="form-check-label" for="disclaimer">I AGREE TO THE <a href="./terms-and-condition.php" target="_blank" rel="noopener noreferrer">TERMS AND CONDITION</a> <span class="required">[UPDATED]</span></label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" name="tos" id="terms_of_service" required>
+                                            <label class="form-check-label" for="terms_of_service">I, the applicant (Owner of Aadhaar Number used in application) agree to share Details / Passcodes etc as &amp; when required for the purpose of Udyam Certificate Generation. <span class="required">[UPDATED]</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="hidden" name="form_type" value="MSME Registration">
+                            <input type="hidden" name="form_name" value="UDYAM Registration">
+                            <input type="hidden" name="form_id" value="udyam_online">
+                            <div class="application-form-submit">
+                                <button type="submit" id="ApplicationFormsubmitButton" class="btn btn-primary">Register</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <p class="application-form-fee-note"><strong>Disclaimer:</strong> This website is managed by private consultants and is <strong>not affiliated with the Government of India.</strong> The amount paid is against advisory charges. Udyam Aadhar / Udyam Registration carries no government fees.</p>
+            </div>
+        </section>
+    </main>
+
+    <section class="application-process" id="process">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">SIMPLE STEPS</span>
+                <h2>How Our Assistance Works</h2>
+                <p>Follow these steps to request consultancy support for your Udyam service.</p>
+            </div>
+            <ol class="application-steps">
+                <li class="application-step">
+                    <span class="application-step-icon"><i class="fa fa-list-alt" aria-hidden="true"></i></span>
+                    <h3>Fill the Application Form</h3>
+                    <p>Choose your service and enter your contact details in the form above.</p>
+                </li>
+                <li class="application-step">
+                    <span class="application-step-icon"><i class="fa fa-credit-card" aria-hidden="true"></i></span>
+                    <h3>Review Consultancy Charges</h3>
+                    <p>Confirm the service scope and consultancy fee before arranging payment with our team. Government portal registration is free.</p>
+                </li>
+                <li class="application-step">
+                    <span class="application-step-icon"><i class="fa fa-shield" aria-hidden="true"></i></span>
+                    <h3>Complete OTP Verification</h3>
+                    <p>Enter any OTP yourself only on the official portal. Our team will never ask you to share it.</p>
+                </li>
+                <li class="application-step">
+                    <span class="application-step-icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                    <h3>Get Service Updates</h3>
+                    <p>Contact our team by email or phone for guidance on the next steps for your selected service.</p>
+                </li>
+            </ol>
+            <p class="process-safety-note"><strong>Security reminder:</strong> Never share your OTP, passwords or sensitive login credentials with anyone. This enquiry form is a visual prototype and does not submit applications or process payments.</p>
+            <div class="process-cta"><a class="button button-primary" href="#enquiry">Ask us about a service</a></div>
+        </div>
+    </section>
+
+    <section class="footer-source-note" aria-label="Registration information source">
+        <div class="container footer-source-note-inner">
+            <span class="footer-source-note-item"><i class="fa fa-calendar" aria-hidden="true"></i><span>Last updated: <strong><time datetime="2026-10-26">26 October 2026</time></strong></span></span>
+            <span class="footer-source-note-item"><i class="fa fa-university" aria-hidden="true"></i><span>Source: <a href="https://udyamregistration.gov.in/" target="_blank" rel="noopener noreferrer">Ministry of MSME, Govt. of India</a></span></span>
+        </div>
+    </section>
+
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a class="footer-brand" href="./index.html#home"><img class="brand-logo" src="udyam-logo.webp" alt=""><span class="brand-copy"><strong>UDYAMINDIAN</strong><span>Udyam and MSME Registration Private Consultancy Service</span></span></a>
+                    <p>We provide independent consultancy support for Udyam Registration, certificate downloads, updates and related services. We are not affiliated with the Government of India.</p>
+                    <p class="footer-disclaimer"><i class="fa fa-shield" aria-hidden="true"></i><span>Private consultancy — not affiliated with the Government of India</span></p>
+                </div>
+                <div class="footer-quick-links">
+                    <h2>Quick links</h2>
+                    <a href="./about-us.html">About us</a>
+                    <a href="https://udyamregistration.gov.in/" target="_blank" rel="noopener noreferrer">NIC Code</a>
+                    <a href="./index.html#enquiry">Enquiry</a>
+                    <a href="https://udyamregistration.gov.in/" target="_blank" rel="noopener noreferrer">Udyam certificate information</a>
+                </div>
+                <div class="footer-contact">
+                    <div class="footer-contact-group">
+                        <h2>Contact us</h2>
+                        <a href="mailto:care@udyamindian.com">care@udyamindian.com</a>
+                        <a href="tel:+919031675081">+91 90316 75081</a>
+                    </div>
+                    <div class="footer-contact-group">
+                        <h2>Information</h2>
+                        <a href="mailto:care@udyamindian.com?subject=Privacy%20Policy%20Enquiry">Privacy Policy enquiry</a>
+                        <a href="#service-fees">Terms & Conditions</a>
+                        <a href="#documents">Cancellation & Refund</a>
+                        <a href="#services">Service delivery information</a>
+                        <a href="mailto:care@udyamindian.com?subject=Complaint">Complaint</a>
+                        <a href="mailto:care@udyamindian.com?subject=Application%20Status%20Enquiry">Track an enquiry</a>
+                        <a href="#enquiry">Contact us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>
+                    <p>&copy; <a href="https://olfant.com/" target="_blank" rel="noopener noreferrer">Olfant</a>, 2026 Company - All Rights Reserved.</p>
+                    <p>Owned By Olfant</p>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="https://udyamregistration.gov.in/" target="_blank" rel="noopener noreferrer">Official Portal</a>
+                    <span aria-hidden="true">·</span>
+                    <a href="mailto:care@udyamindian.com">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+</body>
+</html>

@@ -45,7 +45,7 @@
     text-align: left;
 }
 
-.application-form-note .fa-solid {
+.application-form-note .fa {
     flex: 0 0 auto;
     margin-top: 3px;
     color: #1268d6;
@@ -200,6 +200,11 @@
 
 .application-form-submit .btn:hover {
     background: #0b4fae;
+}
+
+.application-form .required,
+.application-form .text-danger {
+    color: #dc3545 !important;
 }
 
 @media (max-width: 520px) {
