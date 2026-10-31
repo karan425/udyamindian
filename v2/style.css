@@ -3397,14 +3397,6 @@ img {
         font-size: 12px;
     }
 
-    .application-step {
-        display: grid;
-        grid-template-columns: 48px minmax(0, 1fr);
-        column-gap: 13px;
-        padding: 16px;
-        text-align: left;
-    }
-
     .application-step::before {
         top: 12px;
         right: 12px;
